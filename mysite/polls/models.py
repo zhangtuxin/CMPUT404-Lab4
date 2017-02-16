@@ -9,6 +9,10 @@ class Question(models.Model):
     pub_date = models.DateTimeField('date published')
     def __str__(self):
         return self.question_text
+
+    def was_published_recently(self):
+    	# This is method return true if the question was update recnetly
+    	return true
     
 @python_2_unicode_compatible
 class Choice(models.Model):
